@@ -16,6 +16,8 @@
         <h2>Sign Up for our Newletter</h2>
         <p>Get the latest news on how your code is doing right in your inbox</p>
       </div>
+      <hr class="line">
+      <hr class="line-two">
     </header>
     <main>
         <form action="index.html"  >
@@ -24,34 +26,35 @@
           <legend><h1>Contact Information</h1></legend>
           <div class="top-form">
             
-          <label for="name" name="user-name">Full Name</label>
+          <label for="name">Full Name</label>
           <input type="text" name="user-name" id="name" placeholder="required" required>
         </div>
 
         <div class="top-form">
-          <label for="email" name="user-email">Email Address</label>
+          <label for="email">Email Address</label>
           <input type="email" name="user-email" id="email" placeholder="required" required>
         </div>
 
         <div class="top-form">
           
-          <label for="phone" name="user-phone">Phone Number</label>
-          <input type="phone" name="user-phone" id="phone" placeholder="e.g 111-111-1111">
+          <label for="phone">Phone Number</label>
+          <input type="tel" name="user-phone" id="phone" placeholder="Phone">
         </div>
 
           <div class="top-form">
-          <label for="address" name="user-address">Street Address</label>
-          <input type="text" name="user-address" id="address"placeholder="Address">
+          <label for="address">Street Address</label>
+          <input type="text" name="user-address" id="address" placeholder="Address">
         </div>
 
           <div class="top-form">
-          <label for="city"  name="user-city">City</label>
-          <input type="text" name="user-city" id="city"placeholder="City">
+          <label for="city">City</label>
+          <input type="text" name="user-city" id="city" placeholder="City">
         </div>
 
           <div class="top-form">
-          <label for="state" name="user-state"placeholder="State">State</label>
+          <label for="state">State</label>
           <select id="state" name="state">
+            <option value="" disabled selected hidden>Choose State...</option>
             <option value="AL">Alabama</option>
             <option value="AK">Alaska</option>
             <option value="AZ">Arizona</option>
@@ -107,38 +110,36 @@
         </div>
 
         <div class="top-form">	
-          <label for="zip" name="user-zip">Zip Code</label>
-          <input type="text" name="user-zip" id="zip" placeholder="Zip">
-        </div>	
+          <label for="zip">Zip Code</label>
+          <input type="text" name="user-zip" id="zip" placeholder="Zip Code">
+        </div>
+        <hr class="line-two">	
         </fieldset>
-
-        <fieldset>
-          <div class="bot-form">
+          <fieldset>
+          
           <legend><h1>Newsletter</h1></legend>
+          <div class="bot-form">
           <p>Select the newsletter you would like to receive: </p>
-          <label for="html"><input type="checkbox" name="" id="html" value="html-check">HTML News</label>
+          <label for="html"><input type="checkbox" name="html_news" id="html" value="html-check">HTML News</label>
           
-          <label for="css"><input type="checkbox" name="" id="html" value="html-check">CSS News</label>
+          <label for="css"><input type="checkbox" name="css_news" id="css" value="css-check">CSS News</label>
           
-          <label for="javascript"><input type="checkbox" name="javascript" id="javascript" value="javascript-check">Javascript News</label>
+          <label for="javascript"><input type="checkbox" name="javascript_news" id="javascript" value="javascript-check">Javascript News</label>
           
           <h3>Newsletter format</h3>
-          <label for="format" name="format"><input type="radio" id="format" name="format" value="html-f">HTML</label>
-          
-          <label for="format" name="format"><input type="radio" id="format" name="format"value="plain-f">Plain Text</label>
+          <label for="format-html" ><input type="radio" id="format-html" name="format" value="html-f">HTML</label>
+          <label for="format-plain" ><input type="radio" id="format-plain" name="format" value="plain-f">Plain Text</label>
           
           <p>Other topics you would like to hear about: </p>
           <textarea id="comments" name="user-comments"></textarea>
-          <label for="submit" name="user-submit"></label>
+          <label for="submit"></label>
           <input type="submit" id="submit" name="user-submit">
-          
         </div>
         </fieldset>
         </form>
-
     </main>
     <footer>
-      <p>Copyright The Code Review</p>
+      <p>Copyright&copy; The Code Review</p>
     </footer>
   </body>
 </html>
